@@ -20,6 +20,8 @@ body {
     background-color: var(--background-pink);
 }
 
+
+
 .grid {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -50,14 +52,18 @@ button {
 section {
     margin-top: 2%;
     margin-bottom: 4rem;
+    margin-left: 60px;
     padding-bottom: 2rem;
 }
 
 .section-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .burger-container,
+.sandwiches-container,
 .desserts-container,
 .drinks-container {
     width: 400px;
@@ -80,7 +86,7 @@ section {
     background-color: var(--claret-wine);
     color: var(--linen);
     justify-content: space-between;
-    height: 3.5rem;
+    height: 5.5rem;
     padding: 0 20px;
 }
 
@@ -105,7 +111,7 @@ section {
     display: block;
     text-decoration: none;
     color: var(--linen);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     padding: .5em;
     width: 100%;
@@ -114,9 +120,8 @@ section {
 }
 
 .navbar__links:hover {
-    background-color: var(--yellow);
-    color: var(--eire-black);
-    transition: background-color .5s ease-in-out 0s;
+    color: var(--yellow);
+    transition: background-color .6s ease-in-out 0s;
 }
 
 .hide-content {

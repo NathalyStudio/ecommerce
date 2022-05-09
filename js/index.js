@@ -45,6 +45,48 @@ API_URL(); // Es la respuesta a la llamada de API
 const API_URL2 = async() => { //espero que la URL termine de cargar 
 
     try {
+        const respuesta = await fetch("https://ig-food-menus.herokuapp.com/sandwiches"); 
+        console.log(respuesta); 
+
+        if (respuesta.status === 200) {
+            const datos = await respuesta.json();
+
+            let sandwiches = "";
+            datos.forEach(sandwich => {
+                sandwiches += `
+                <div class="sandwiches-container">
+                     <h2>${sandwich.name}</h2>
+                     <div class = "dessert">
+                       <img class = "foto" src="${sandwich.img}">
+                     </div>
+                     <p> Procedencia: ${sandwich.country}</p>
+                     <h3>Precio $ ${sandwich.price}</h3>
+                     <button>Agregar al carrito</button>
+                </div>
+                     `
+            });
+
+
+            document.getElementById('sandwiches').innerHTML = sandwiches;
+
+        } else if (respuesta === 404) {
+            console.log("La página de destino no existe")
+        } else {
+            console.log("Error!!")
+        }
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+API_URL2();
+
+
+
+const API_URL3 = async() => { //espero que la URL termine de cargar 
+
+    try {
         const respuesta = await fetch("https://ig-food-menus.herokuapp.com/desserts"); //aquí accedo a la api, al menú de postres
         console.log(respuesta); //imprimo el resultado en consola para ver qué array me traigo
         //si es correcto, entra por el código 200 y comienzo el proceso
@@ -80,10 +122,11 @@ const API_URL2 = async() => { //espero que la URL termine de cargar
     }
 }
 
+API_URL3();
 
-API_URL2();
+
 //Para llamar a las bebidas
-const API_URL3 = async() => { //await me sirve para esperar a que mi url termine de cargar
+const API_URL4 = async() => { //await me sirve para esperar a que mi url termine de cargar
     //await funcina solamente con funciones asincronicas por eso uso async.
     try {
         const respuesta = await fetch("https://ig-food-menus.herokuapp.com/drinks"); // Fetch nos permite acceder y manipular contenido http
@@ -123,4 +166,4 @@ const API_URL3 = async() => { //await me sirve para esperar a que mi url termine
 }
 
 
-API_URL3(); // Es la respuesta a la llamada de API
+API_URL4(); // Es la respuesta a la llamada de API
