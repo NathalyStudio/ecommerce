@@ -131,3 +131,7 @@ section {
 .show-content {
     display: contents;
 }
+
+#product{
+    display: none;
+}
