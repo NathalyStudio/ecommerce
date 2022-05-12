@@ -1,5 +1,5 @@
-function myFunction() {
-    var x = document.getElementById("product")
+function myFunction3() {
+    var x = document.getElementById("product3")
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
