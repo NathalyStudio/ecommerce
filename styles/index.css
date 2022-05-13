@@ -191,9 +191,10 @@ section {
 }
 
 .custom-padding {
-    padding-top: .2rem !important;
+    padding-top: .1rem !important;
 }
 
 #tabs li {
     background-color: var(--claret-wine) !important;
 }
+
