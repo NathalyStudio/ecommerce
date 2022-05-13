@@ -45,8 +45,8 @@ API_URL(); // Es la respuesta a la llamada de API
 const API_URL2 = async() => { //espero que la URL termine de cargar 
 
     try {
-        const respuesta = await fetch("https://ig-food-menus.herokuapp.com/sandwiches"); 
-        console.log(respuesta); 
+        const respuesta = await fetch("https://ig-food-menus.herokuapp.com/sandwiches");
+        console.log(respuesta);
 
         if (respuesta.status === 200) {
             const datos = await respuesta.json();
@@ -165,5 +165,47 @@ const API_URL4 = async() => { //await me sirve para esperar a que mi url termine
     }
 }
 
+API_URL4();
 
-API_URL4(); // Es la respuesta a la llamada de API
+//Para llamar a las pizzas
+const API_URL5 = async() => { //await me sirve para esperar a que mi url termine de cargar
+    //await funcina solamente con funciones asincronicas por eso uso async.
+    try {
+        const respuesta = await fetch("https://ig-food-menus.herokuapp.com/pizzas"); // Fetch nos permite acceder y manipular contenido http
+        console.log(respuesta); // La respuesta a mi petición van a ser todas las bebidas
+
+        if (respuesta.status === 200) { // El codigo 200 me dice que esta todo Ok y procedo a acceder al contenido
+            const datos1 = await respuesta.json(); // Los datos que obtengo son .json
+
+            let pizzas = ""; // Todos los datos que obtenga los voy a guardar en mi variable 
+            datos1.forEach(pizza => { // Por cada burguer voY acceder al titulo, la foto, el pais y el precio.
+                pizzas += `
+                <div class="pizzas-container">
+                     <h2>${pizza.name}</h2>
+                     <div class = "pizza">
+                       <img class = "foto" src="${pizza.img}">
+                     </div>
+                     <p> Procedencia: ${pizza.country}</p>
+                     <h3>Precio $ ${pizza.price}</h3>
+                     <button>Agregar al carrito</button>
+
+                </div>
+                     `
+            });
+
+
+            document.getElementById('pizzas').innerHTML = pizzas; // Todo lo que obtuve lo inyecto en mi html de forma dinÁmica.
+
+        } else if (respuesta === 404) { // Si la pagina no entró por el cofigo 200, puede largar error 404
+            console.log("La página de destino no existe")
+        } else {
+            console.log("Error!!") // si tenemos un error desconocido puede salir esto.
+        }
+
+    } catch (error) { // can catch capturamos el error desde consola e intentamos solucionarlo.
+        console.log(error)
+    }
+}
+
+
+API_URL5(); // Es la respuesta a la llamada de API

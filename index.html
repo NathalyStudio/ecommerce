@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UN RESTO</title>
     <link rel="stylesheet" href="styles/tabs.css">
     <link rel="stylesheet" href="styles/index.css">
-    <script defer src="js/tabs.js" ></script>
+    <script defer src="js/tabs.js"></script>
 </head>
+
 <body>
 
 
     <div class="contenedor">
-        <ul class="ul">
-            <li class="li"><img src="./logo/logo.png" alt="Logo"></li>
-            <li class="li activo">Burger</li>
-            <li class="li">Sandwiches</li>
-            <li class="li">Postres</li>
-            <li class="li">Bebidas</li>
-            <li class="li"><span class="iconify" data-icon="clarity:shopping-cart-line"></span></li>
-        </ul>
-
+        <nav class="navbar">
+            <ul class="ul navbar__items">
+                <li class="li"><img src="./logo/logo.png" alt="Logo"></li>
+                <li class="li activo">Burger</li>
+                <li class="li">Sandwiches</li>
+                <li class="li">Postres</li>
+                <li class="li">Bebidas</li>
+                <li class="li">Pizzas</li>
+                <li class="li"><span class="iconify" data-icon="clarity:shopping-cart-line"></span></li>
+            </ul>
+        </nav>
         <div class="subcontenedor">
             <div class="bloque">inicio</div>
 
@@ -53,14 +57,21 @@
                 </div>
             </div>
 
+            <div class="bloque">
+                <h3 class="section-title">Pizzas</h3>
+                <div class="contenido grid" id="pizzas">
+
+                </div>
+            </div>
 
             <div class="bloque">Carrito</div>
-            
+
         </div>
     </div>
-    
+
 
     <script src="./js/index.js"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </body>
+
 </html>

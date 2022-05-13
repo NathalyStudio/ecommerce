@@ -69,7 +69,8 @@ section {
 .burger-container,
 .sandwiches-container,
 .desserts-container,
-.drinks-container {
+.drinks-container,
+.pizzas-container {
     width: 400px;
     height: 350px;
     padding: 20px;
@@ -83,6 +84,26 @@ section {
     height: 250px;
     padding: 10px 0;
     border-radius: 8%;
+}
+
+.navbar {
+    background-color: var(--claret-wine);
+    width: 99vw;
+    margin-top: -20px;
+    margin-left: -20px;
+    color: var(--linen);
+    font-family: 'Quicksand';
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.navbar__items {
+    list-style: none;
+}
+
+.contenedor .li.activo {
+    background-color: var(--yellow);
+    color: white;
 }
 
 
@@ -102,6 +123,8 @@ section {
     justify-content: space-between;
 } */
 
+
+/* 
 .navbar_item {
     float: left;
     list-style: none;
@@ -110,10 +133,10 @@ section {
     align-items: center;
     justify-content: space-around;
     width: 20%;
-    /* Aqui se ajusta dependiendo de la cantidad de enlaces que se tengan en el menu */
-}
+} */
 
-.navbar__links {
+
+/* .navbar__links {
     display: block;
     text-decoration: none;
     color: var(--linen);
@@ -122,34 +145,40 @@ section {
     padding: .5em;
     width: 100%;
     text-align: center;
-    /* Aqui se ajusta dependiendo de la cantidad de enlaces que se tengan en el menu */
 }
+ */
 
+
+/* 
 .navbar__links:hover {
     color: var(--yellow);
     transition: background-color .6s ease-in-out 0s;
-}
+} */
 
-.hide-content {
+
+/* .hide-content {
     display: none;
 }
 
 .show-content {
     display: contents;
-}
+} */
 
 #product {
     display: none;
 }
 
-.ui-tabs .ui-tabs-nav {
+
+/* .ui-tabs .ui-tabs-nav {
     background: var(--claret-wine);
     text-align: center;
     margin: -.8em !important;
     overflow: hidden;
     max-height: 135px;
-}
+} */
 
+
+/* 
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
     background: var(--claret-wine) !important;
     color: var(--new-york-pink);
@@ -196,5 +225,4 @@ section {
 
 #tabs li {
     background-color: var(--claret-wine) !important;
-}
-
+} */
