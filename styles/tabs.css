@@ -19,8 +19,7 @@
     cursor: pointer;
 }
 .contenedor .li.activo{
-    background-color: lightskyblue;
-    color:white;
+    color: white;
 }
 .contenedor .subcontenedor{
     min-height: 10vh;

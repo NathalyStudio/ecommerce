@@ -27,6 +27,7 @@ body {
     row-gap: 7em;
 }
 
+
 h2 {
     margin-bottom: 10px;
 }
@@ -102,9 +103,34 @@ section {
 }
 
 .contenedor .li.activo {
-    background-color: var(--yellow);
-    color: white;
+    color: var(--yellow);
+    
 }
+
+/*Formulario*/
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 10em;
+}
+
+input {
+    padding: 5px;
+    margin-top: 10px; 
+    margin-bottom: 15px;
+    width: 300px;
+    background-color: rgba(175, 170, 172, 0.897);
+  }
+
+  
+.btn {
+      padding: 5px;
+      margin-top: 8px;
+      width: 120px;
+      background-color: rgb(228, 172, 18);
+  }
+
 
 
 /* .menu {
