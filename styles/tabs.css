@@ -14,7 +14,7 @@
 }
 .contenedor .li{
     padding: 1em;
-    margin:0 2em 0 0;
+    margin:0 0.5em 0 0;
     transition: all .5s ease;
     cursor: pointer;
 }
@@ -35,6 +35,7 @@
     transition: all .5s ease;
 }
 .contenedor .bloque.activo{
+    margin-top: 7rem;
     opacity: 1;
     transform: translateY(0%);
 }
