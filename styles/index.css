@@ -1,8 +1,3 @@
-/* ESTILOS GENERALES */
-
-
-/* EN ROOT SE DEFINEN LOS COLORES COMO VARIABLES */
-
 :root {
     --background-pink: #Eee4e1;
     --claret-wine: #87163d;
@@ -13,9 +8,6 @@
     --eire-black: #141414;
 }
 
-
-/* SETTEAR a 0 los estilos*/
-
 * {
     margin: 0;
     padding: 0;
@@ -23,12 +15,18 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-
-/* ESTILOS GENERALES DE CADA ELEMENTO */
-
 body {
+    /*     overflow: hidden; */
     background-color: var(--background-pink);
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-auto-rows: auto;
+    row-gap: 7em;
+}
+
 
 h2 {
     margin-bottom: 10px;
@@ -57,36 +55,37 @@ section {
     padding-bottom: 2rem;
 }
 
-.section-title,
-.title-form {
+.container {
+    margin: 0;
+    padding: 0;
+    max-width: 98.2vw;
+}
+
+.section-title {
     margin-top: 10px;
     margin-bottom: 20px;
     text-align: center;
 }
 
-
-/* ESTILO PARA LA PLANTILLA DE COLUMNAS PARA LOS PRODUCTOS DEL MENU, DE CADA CATEGORIA */
-
-.grid {
-    display: flex;
-    /* flex-flow: row wrap; */
-    row-gap: 7em;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex-direction: row;
-}
-
-.contenedor {
-    width: 100%;
+.burger-container,
+.sandwiches-container,
+.desserts-container,
+.drinks-container,
+.pizzas-container {
+    width: 400px;
+    height: 350px;
+    padding: 20px;
+    margin: 10px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
 }
 
-
-/* ESTILOS PARA EL MENU */
+.foto {
+    width: 300px;
+    height: 250px;
+    padding: 10px 0;
+    border-radius: 8%;
+}
 
 .navbar {
     background-color: var(--claret-wine);
@@ -103,140 +102,153 @@ section {
     list-style: none;
 }
 
-
-/* Estilos para el contenedor de cada producto */
-
-.burger-container,
-.sandwiches-container,
-.desserts-container,
-.drinks-container,
-.pizzas-container {
-    width: 33%;
-    height: 350px;
-    padding: 20px;
+.contenedor .li.activo {
+    color: var(--yellow);
+    
 }
 
-
-/* Estilos para la foto de cada producto */
-
-.foto {
-    width: 300px;
-    height: 250px;
-    padding: 10px 0;
-    border-radius: 8%;
-}
-
-
-/* =================================================
-            ESTILOS PARA EL FORMULARIO
-===================================================== */
+/*Formulario*/
 
 .grid2 {
-    /*    display: flex;
-    flex-direction: column;
-    max-height: 60%;
-    flex-wrap: wrap;
-    width: 80%; */
     display: grid;
-    grid-template-columns: 40% 40%;
-    padding: 1em;
-    width: 100%;
-    column-gap: 9em;
-    justify-items: stretch;
-    align-content: center;
-    justify-content: center;
-    align-items: start;
-}
-
-.form {
-    background-color: var(--new-york-pink);
-    width: fit-content;
-    /*  margin-left: 21%; */
-}
-
-.form-left-column,
-.form-right-column {
-    width: 100%;
-    margin-left: 1em;
-    margin-right: 1em;
-}
-
-.form p {
-    font-size: 12px;
-}
-
-.title-form {
-    color: white;
+    grid-template-columns: 50% 50%;
+    column-gap: 10em;
 }
 
 input {
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 10px; 
     margin-bottom: 15px;
     width: 300px;
-    border-radius: 5px;
-    border: 2px solid var(--linen)
-}
+    background-color: rgba(175, 170, 172, 0.897);
+  }
 
-input:focus {
-    border: 2px solid var(--claret-wine);
-    outline: var(--claret-wine);
-}
-
+  
 .btn {
-    padding: 5px;
-    margin-top: 8px;
-    width: 120px;
-    background-color: rgb(228, 172, 18);
+      padding: 5px;
+      margin-top: 8px;
+      width: 120px;
+      background-color: rgb(228, 172, 18);
+  }
+
+
+
+/* .menu {
+    display: flex;
+    background-color: var(--claret-wine);
+    color: var(--linen);
+    justify-content: space-between;
+    height: 5.5rem;
+    padding: 0 20px;
+} */
+
+
+/* .navbar_items {
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+} */
+
+
+/* 
+.navbar_item {
+    float: left;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+} */
+
+
+/* .navbar__links {
+    display: block;
+    text-decoration: none;
+    color: var(--linen);
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: .5em;
+    width: 100%;
+    text-align: center;
 }
+ */
+
+
+/* 
+.navbar__links:hover {
+    color: var(--yellow);
+    transition: background-color .6s ease-in-out 0s;
+} */
+
+
+/* .hide-content {
+    display: none;
+}
+
+.show-content {
+    display: contents;
+} */
 
 #product {
     display: none;
 }
 
-.contenedor .ul {
-    width: 80%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
-}
 
-.contenedor .li.activo {
-    color: var(--yellow);
-}
-
-.contenedor .li {
-    padding: 1em .889em;
-    transition: all .5s ease;
-    cursor: pointer;
-}
-
-
-/* .contenedor .subcontenedor {
-    min-height: 10vh;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+/* .ui-tabs .ui-tabs-nav {
+    background: var(--claret-wine);
+    text-align: center;
+    margin: -.8em !important;
+    overflow: hidden;
+    max-height: 135px;
 } */
 
-.form {
-    height: fit-content;
-    margin-top: 5vh;
+
+/* 
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    background: var(--claret-wine) !important;
+    color: var(--new-york-pink);
+    border-bottom: 10px solid var(--yellow);
+    text-align: center;
+    font-size: 32px;
+    line-height: calc(32px*1.5);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
 }
 
-.contenedor .bloque {
-    /*    margin: 1em; */
-    padding: 1em;
-    position: absolute;
-    top: 2em;
-    opacity: 0;
-    transform: translateY(50%);
-    transition: all .5s ease;
+.ui-tabs .ui-tabs-nav li {
+    list-style: none;
+    float: left;
+    position: relative;
+    top: 0;
+    padding: 0;
+    white-space: nowrap;
+    margin: -7px;
+    padding-bottom: 1px;
+    background-color: var(--claret-wine) !important;
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    color: var(--new-york-pink);
+    border: none;
 }
 
-.contenedor .bloque.activo {
-    opacity: 1;
-    transform: translateY(0%);
-    margin-top: 7%;
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    float: left;
+    padding: 2.5rem 1.5rem 0 !important;
+    text-decoration: none;
+    background: var(--claret-wine);
+    color: var(--background-pink);
 }
+
+.custom-padding {
+    padding-top: .1rem !important;
+}
+
+#tabs li {
+    background-color: var(--claret-wine) !important;
+} */
