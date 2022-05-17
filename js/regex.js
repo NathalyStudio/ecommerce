@@ -8,7 +8,7 @@ const addressValidation = document.getElementById("address_validation")
 const passwordValidation = document.getElementById("password_validation")
 
 
-formulario.onsubmit = (event)=>{
+formulario.oninput = (event)=>{
     event.preventDefault()
 
 
