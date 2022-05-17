@@ -12,7 +12,6 @@
 
 <body>
 
-
     <div class="contenedor">
         <nav class="navbar">
             <ul class="ul navbar__items">
@@ -27,94 +26,94 @@
                 <li class="li"><span class="iconify" data-icon="clarity:shopping-cart-line"></span></li>
             </ul>
         </nav>
-        <div class="subcontenedor">
-            <div class="bloque grid2 activo">
-                <div >
-                    <h2>Registrate</h2>
-                    <form id="formulario">
-                        <label for="">Nombre</label><br><input name="name" type="text">
-                        <p id="name_validation"></p>
-                        <label for="">Apellido</label><br><input name="surname" type="text">
-                        <p id="surname_validation"></p>
-                        <label for="">Email</label><br><input name="mail" type="text">
-                        <p id="email_validation"></p>
-                        <label for="">Telefono</label><br><input name="phone" type="tel">
-                        <p id="phone_validation"></p>
-                        <label for="">Dirección</label><br><input name="address" type="text">
-                        <p id="address_validation"></p>
-                        <label for="">Contraseña</label><br><input name="password" type="password">
-                        <p id="password_validation"></p>
-                        <button class="btn">Enviar</button>
-                    </form>
-                </div>
-            
-                <div>
-                    <h2>Inicia sesión</h2>
-                    <form id="formulario">
-                        <label for="">Email</label><br><input name="mail" type="text">
-                        <p id="email_validation"></p>
-                        <label for="">Contraseña</label><br><input name="password" type="password">
-                        <p id="password_validation"></p>
-                        <button class="btn">Enviar</button>
-                    </form>
-                </div>
-            </div>
 
-            
-            <div class="bloque">
-                <h3 class="section-title">Burgers</h3>
-                <div class="contenido grid" id="burgers1">
+        <section class="bloque grid2 activo form">
+            <article class="form-left-column">
+                <h2 class="title-form">Registrate</h2>
+                <form id="formulario">
+                    <input name="name" type="text" placeholder="Nombre" id="input__name">
+                    <p id="name_validation"></p>
+                    <input name="surname" type="text" placeholder="Apellido">
+                    <p id="surname_validation"></p>
+                    <input name="mail" type="text" placeholder="Email">
+                    <p id="email_validation"></p>
+                    <input name="phone" type="tel" placeholder="Teléfono">
+                    <p id="phone_validation"></p>
+                    <input name="address" type="text" placeholder="Dirección">
+                    <p id="address_validation"></p>
+                    <input name="password" type="password" placeholder="Contraseña">
+                    <p id="password_validation"></p>
+                    <button class="btn">Enviar</button>
+                </form>
+            </article>
 
-                </div>
+            <article>
+                <h2 class="title-form">Inicia sesión</h2>
+                <form id="formulario">
+                    <label for="">Email</label><br><input name="mail" type="text">
+                    <p id="email_validation"></p>
+                    <label for="">Contraseña</label><br><input name="password" type="password">
+                    <p id="password_validation"></p>
+                    <button class="btn">Enviar</button>
+                </form>
+            </article>
+        </section>
+
+
+        <section class="bloque">
+            <h3 class="section-title">Burgers</h3>
+            <div class="contenido grid" id="burgers1">
 
             </div>
 
-            <div class="bloque">
-                <h3 class="section-title">Sandwiches</h3>
-                <div class="contenido grid" id="sandwiches">
+        </section>
 
-                </div>
+        <section class="bloque">
+            <h3 class="section-title">Sandwiches</h3>
+            <div class="contenido grid" id="sandwiches">
+
             </div>
+        </section>
 
-            <div class="bloque">
-                <h3 class="section-title">Postres</h3>
-                <div class=" contenido grid" id="desserts">
+        <section class="bloque">
+            <h3 class="section-title">Postres</h3>
+            <div class=" contenido grid" id="desserts">
 
-                </div>
             </div>
+        </section>
 
-            <div class="bloque">
-                <h3 class="section-title">Bebidas</h3>
-                <div class="contenido grid" id="drinks">
+        <section class="bloque">
+            <h3 class="section-title">Bebidas</h3>
+            <div class="contenido grid" id="drinks">
 
-                </div>
             </div>
+        </section>
 
-            <div class="bloque">
-                <h3 class="section-title">Pizzas</h3>
-                <div class="contenido grid" id="pizzas">
+        <section class="bloque">
+            <h3 class="section-title">Pizzas</h3>
+            <div class="contenido grid" id="pizzas">
 
-                </div>
             </div>
+        </section>
 
-            <div class="bloque">
-                <h3 class="section-title">Polo Frito</h3>
-                <div class="contenido grid" id="chickens">
+        <section class="bloque">
+            <h3 class="section-title">Polo Frito</h3>
+            <div class="contenido grid" id="chickens">
 
-                </div>
             </div>
+        </section>
 
-            <div class="bloque">
-                <h3 class="section-title">Asado</h3>
-                <div class="contenido grid" id="steaks">
+        <section class="bloque">
+            <h3 class="section-title">Asado</h3>
+            <div class="contenido grid" id="steaks">
 
-                </div>
             </div>
+        </section>
 
-            <div class="bloque">Carrito</div>
+        <section class="bloque">Carrito</section>
 
-        </div>
     </div>
+
 
 
     <script src="./js/index.js"></script>
