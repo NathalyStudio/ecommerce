@@ -20,11 +20,18 @@ body {
     background-color: var(--background-pink);
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-auto-rows: auto;
-    row-gap: 7em;
+    column-gap: 4em;
+    row-gap: 6em;
 }
 
 h2 {
@@ -145,14 +152,22 @@ input:focus {
     width: 100%;
 }
 
-.form-right-column {
-    /*   align-items: center; */
-}
-
 .title-form {
     color: var(--linen);
     text-transform: uppercase;
     text-align: center;
+}
+
+
+/*MEDIA QUERYS*/
+
+@media only screen and (max-width: 576px) {
+    .grid {
+        grid-template-columns: 50% 50%;
+        grid-auto-rows: auto;
+        column-gap: 4em;
+        row-gap: 6em;
+    }
 }
 
 
