@@ -144,20 +144,14 @@ input {
 
 /*MEDIA QUERYS*/
 
-@media only screen and (max-width: 576px) {
+
+@media only screen and (max-width: 376px) {
     .grid {
 
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 100%;
         grid-auto-rows: auto;
-        column-gap: 4em;
-        row-gap: 6em;
+      
     }
-
-
-
-
-
-
 }
 
 
