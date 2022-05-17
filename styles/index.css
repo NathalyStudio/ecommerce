@@ -26,7 +26,6 @@ body {
     align-content: center;
 }
 
-
 .grid {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -34,8 +33,6 @@ body {
     column-gap: 4em;
     row-gap: 6em;
 }
-
-
 
 h2 {
     margin-bottom: 10px;
@@ -105,6 +102,7 @@ section {
     font-family: 'Quicksand';
     font-size: 22px;
     font-weight: 700;
+    overflow: hidden;
 }
 
 .navbar__items {
@@ -113,8 +111,8 @@ section {
 
 .contenedor .li.activo {
     color: var(--yellow);
-    
 }
+
 
 /*Formulario*/
 
@@ -125,21 +123,40 @@ section {
 }
 
 input {
-    padding: 5px;
-    margin-top: 10px; 
-    margin-bottom: 15px;
-    width: 300px;
-    background-color: rgba(175, 170, 172, 0.897);
-  }
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 95%;
+    border-radius: 5px;
+    outline: var(--claret-wine);
+    border: none;
+}
 
-  
+input:focus {
+    outline: var(--claret-wine);
+    border: 2px solid var(--claret-wine);
+}
+
 .btn {
-      padding: 5px;
-      margin-top: 8px;
-      width: 120px;
-      background-color: rgb(228, 172, 18);
-  }
+    padding: 5px;
+    margin-top: 8px;
+    width: 120px;
+    background-color: rgb(228, 172, 18);
+}
 
+.form-left-column,
+.form-right-column {
+    background-color: var(--new-york-pink);
+    padding: 25px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.title-form {
+    color: var(--linen);
+    text-transform: uppercase;
+    text-align: center;
+}
 
 
 /*MEDIA QUERYS*/
@@ -149,18 +166,8 @@ input {
     .grid {
 
         grid-template-columns: 100%;
-        grid-auto-rows: auto;
-      
-    }
+        grid-auto-rows: auto; }
 }
-
-
-
-
-
-
-
-
 
 
 /* .menu {
