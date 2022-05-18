@@ -20,18 +20,20 @@ body {
     background-color: var(--background-pink);
 }
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
+
+
 
 .grid {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-auto-rows: auto;
-    column-gap: 4em;
-    row-gap: 6em;
+    margin-top: 10px;
+    column-gap: 2em;
+    row-gap: 5em;
+    background-color: blue;
+}
+.contenido {
+    background-color: red;
 }
 
 h2 {
@@ -54,12 +56,7 @@ button {
     font-size: 1.1em;
 }
 
-section {
-    margin-top: 2%;
-    margin-bottom: 4rem;
-    margin-left: 60px;
-    padding-bottom: 2rem;
-}
+
 
 .container {
     margin: 0;
@@ -166,7 +163,10 @@ input:focus {
     .grid {
 
         grid-template-columns: 100%;
-        grid-auto-rows: auto; }
+        grid-auto-rows: auto; 
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 
