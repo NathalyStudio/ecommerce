@@ -23,8 +23,6 @@ body {
 }
 
 
-
-
 /* NAV */
 
 .navbar {
@@ -39,15 +37,13 @@ body {
     margin-left: 30px;
 }
 
-
-.navbar__items{
+.navbar__items {
     display: flex;
     justify-content: space-between;
     justify-items: center;
     list-style: none;
     font-size: 1.2em;
 }
-
 
 .navbar__items .text {
     margin-top: 20px;
@@ -76,23 +72,24 @@ body {
     color: var(--yellow);
 }
 
-
-.contenedor .subcontenedor{
+.contenedor .subcontenedor {
     min-height: 10vh;
     position: relative;
 }
-.contenedor .bloque{
+
+.contenedor .bloque {
     display: flex;
     justify-content: center;
-    margin:1em;
+    margin: 1em;
     padding: 1em;
     position: absolute;
-    top:2em;
+    top: 2em;
     opacity: 0;
     transform: translateY(50%);
     transition: all .5s ease;
 }
-.contenedor .bloque.activo{
+
+.contenedor .bloque.activo {
     margin-top: 7rem;
     opacity: 1;
     transform: translateY(0%);
@@ -106,26 +103,26 @@ body {
     justify-content: center;
 }
 
-
-.contenedor .subcontenedor{
+.contenedor .subcontenedor {
     min-height: 10vh;
     position: relative;
 }
-.contenedor .bloque{
-    margin:1em;
+
+.contenedor .bloque {
+    margin: 1em;
     padding: 1em;
     position: absolute;
-    top:2em;
+    top: 2em;
     opacity: 0;
     transform: translateY(50%);
     transition: all .5s ease;
 }
-.contenedor .bloque.activo{
+
+.contenedor .bloque.activo {
     margin-top: 7rem;
     opacity: 1;
     transform: translateY(0%);
 }
-
 
 
 /* REGISTRO*/
@@ -177,7 +174,6 @@ input:focus {
 }
 
 
-
 /* PRODUCTOS*/
 
 .bloque {
@@ -193,9 +189,7 @@ input:focus {
     margin-top: 10px;
     column-gap: 1em;
     row-gap: 8em;
-    
 }
-
 
 h2 {
     margin-bottom: 10px;
@@ -219,7 +213,6 @@ button {
     border-radius: 5px;
     font-size: 1.1em;
 }
-
 
 .section-title {
     margin-top: 5px;
@@ -246,7 +239,6 @@ button {
     padding: 10px 0;
     border-radius: 8%;
 }
-
 
 
 /*Formulario*/
@@ -293,9 +285,39 @@ input:focus {
     text-align: center;
 }
 
+.detalles-producto {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.img-carrito {
+    width: 200px;
+    object-fit: cover;
+}
+
+.detallesplato {
+    padding: 2rem;
+}
+
+.detallesplato h3 {
+    margin-bottom: 1rem;
+}
+
+.description {
+    width: 80%;
+}
+
+.divisor {
+    background-color: var(--eire-black);
+    width: 95%;
+    height: 1px;
+}
+
 
 /*MEDIA QUERIES*/
-
 
 @media screen and (max-width: 952px) {
     .grid {
@@ -307,36 +329,27 @@ input:focus {
         column-gap: 1em;
         row-gap: 8em;
     }
-
     .foto {
         width: 250px;
         height: 300px;
     }
-
     button {
         width: 250px;
     }
-
     .navbar__items .text {
         font-size: 1em;
         margin-right: .5em;
     }
-
     .navbar__items .log {
         margin-right: 4em;
         font-size: 1.3em;
     }
-
     .centrar .grid2 {
-      
         column-gap: 5em;
     }
-
     h2 {
         font-size: 1em;
     }
-
-
     input {
         padding: 8px 10px;
         margin-top: 8px;
@@ -346,28 +359,20 @@ input:focus {
         outline: var(--claret-wine);
         border: none;
     }
-
     .btn {
-    padding: 5px;
-    margin-top: 8px;
-    width: 100px;
-    font-size: 0.9em;
-    background-color: rgb(228, 172, 18);
-}
-
-
+        padding: 5px;
+        margin-top: 8px;
+        width: 100px;
+        font-size: 0.9em;
+        background-color: rgb(228, 172, 18);
+    }
     .foto {
         display: flex;
         min-width: 200;
     }
-
-  
 }
 
-
-
 @media screen and (max-width: 700px) {
-
     .grid {
         display: grid;
         width: 90vw;
@@ -377,31 +382,24 @@ input:focus {
         column-gap: 1em;
         row-gap: 8em;
     }
-
     .foto {
         width: 200px;
         height: 250px;
     }
-
     button {
         width: 200px;
     }
-
     .navbar__items .text {
         font-size: .7em;
         margin-right: .5em;
     }
-
     .navbar__items .log {
         margin-right: 3em;
         font-size: 1.3em;
     }
-
     h2 {
         font-size: .8em;
     }
-
-
     input {
         padding: 5px 8px;
         margin-top: 5px;
@@ -411,7 +409,6 @@ input:focus {
         outline: var(--claret-wine);
         border: none;
     }
-
     .btn {
         padding: 3px;
         margin-top: 6px;
@@ -419,12 +416,10 @@ input:focus {
         font-size: 0.7em;
         background-color: rgb(228, 172, 18);
     }
-    
-
-   
-   
+    .detalles-producto {
+        flex-direction: column;
+    }
 }
-
 
 @media screen and (max-width: 440px) {
     .navbar__items .text {
@@ -432,8 +427,6 @@ input:focus {
         margin-right: .4em;
     }
 }
-
-
 
 #product {
     display: none;
