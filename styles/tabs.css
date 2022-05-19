@@ -1,26 +1,29 @@
-
-
 .bloque {
     display: flex;
     justify-content: center;
 }
 
-
-.contenedor .subcontenedor{
+.contenedor .subcontenedor {
     min-height: 10vh;
     position: relative;
+    margin-left: 0;
+    margin-right: 0;
 }
-.contenedor .bloque{
-    margin:1em;
+
+.contenedor .bloque {
+    margin: 1em 0;
     padding: 1em;
     position: absolute;
-    top:2em;
+    top: 2em;
     opacity: 0;
     transform: translateY(50%);
     transition: all .5s ease;
 }
-.contenedor .bloque.activo{
+
+.contenedor .bloque.activo {
     margin-top: 7rem;
     opacity: 1;
     transform: translateY(0%);
+    margin-left: 0;
+    margin-right: 0;
 }

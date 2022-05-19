@@ -12,10 +12,20 @@
 <body>
 
     <div class="contenedor">
-        <nav class="navbar">
 
-            <ul class="navbar__items">
-                <li class="li activo"><img class="logo" src="./logo/logo.png" alt="Logo"></li>
+        <nav class="navbar top-nav">
+            <!--El input , el label y el div son para el menu responsivo-->
+
+            <div>
+                <img class="logo" src="./logo/logo.png" alt="Logo"></li>
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+          </label>
+
+            <ul class="menu navbar__items">
+                <li class="li text activo">Formulario</li>
                 <li class="li text">Burger</li>
                 <li class="li text">Sandwiches</li>
                 <li class="li text">Postres</li>
@@ -24,14 +34,16 @@
                 <li class="li text">Pollo</li>
                 <li class="li text">Asado</li>
                 <li class="li log"><span class="iconify" data-icon="clarity:shopping-cart-line"></span></li>
+
             </ul>
         </nav>
 
 
 
-        <section class="bloque grid2 activo form">
-            <h2 class="title-form">Registrate</h2>
+        <section class="bloque activo form">
+
             <article class="form-left-column">
+                <h2 class="title-form">Registrate</h2>
                 <form id="formulario">
                     <input name="name" type="text" placeholder="Nombre" id="input__name">
                     <p id="name_validation"></p>
