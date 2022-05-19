@@ -11,7 +11,7 @@ const API_URL = async() => { //await me sirve para esperar a que mi url termine 
             datos.forEach(burger => { // Por cada burguer voY acceder al titulo, la foto, el pais y el precio.
                 burgers += `
                 <div class="burger-container">
-                     <h2>${burger.name}</h2>
+                     <h2 class="titleh2">${burger.name}</h2>
                      <div class = "burger">
                        <img class = "foto" src="${burger.img}">
                      </div>
