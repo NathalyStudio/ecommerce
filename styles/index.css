@@ -453,6 +453,9 @@ input:focus {
         align-items: center;
         z-index: 9999 !important;
     }
+    .contenedor .bloque.activo {
+        margin-top: 3rem;
+    }
     #menu-toggle~.menu li {
         height: 0;
         margin: 0;
@@ -521,6 +524,9 @@ input:focus {
     .foto {
         display: flex;
         min-width: 200;
+    }
+    .tabla {
+        max-width: 90%;
     }
 }
 
