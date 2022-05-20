@@ -422,6 +422,12 @@ input:focus {
 
 /*MEDIA QUERIES*/
 
+@media (min-width: 953px) and (max-width:1140px) {
+    .navbar__items .text {
+        font-size: .75em;
+    }
+}
+
 @media screen and (max-width: 952px) {
     .grid {
         display: grid;
